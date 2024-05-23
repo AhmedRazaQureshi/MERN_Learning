@@ -1,5 +1,5 @@
 # MERN_Learning
-#1: HTML
-    ->HTML_1
-#2: CSS
-    ->CSS_1
+#1: HTML <br>
+    ->HTML_1 <br>
+#2: CSS <br>
+    ->CSS_1 <br>
