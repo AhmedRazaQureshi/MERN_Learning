@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divs</title>
+    <style>
+        hr{
+            border: 1px solid red;
+        }
+        .div_01{
+            background-color: aqua;
+        }
+        .div_02{
+            background-color: gray;
+        }
+        .div_03{
+            display: inline; 
+            background-color: aqua;
+        }
+        #div_04{
+            display: inline;
+            background-color: gray;
+        }
+        .span_05{
+            display: block;
+            background-color: aqua;
+        }
+        .span_06{
+            display: block;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Divs (division tag) 
+        (generic tag, can be applied to 
+         any tags[img, h1, etc])-->
+    <!-- div tag is a block element, 
+         used to group many tags together-->
+    <div class="div_01">Inside div_01</div>
+    <div class="div_02">Inside div_02</div>
+    <br>
+    <div class="div_03">Inside div_03</div>
+    <div id="div_04">Inside div_04</div>
+    <br> <hr>  <!-- class & id works same but 
+        class is generic & id is specific -->
+
+    <!-- span tag (same as div, but is inline by default) -->
+    <span class="div_01">Inside span_01</span>
+    <br>
+    <span class="div_02">Inside span_02</span>
+    <br><br>
+    <span class="div_03">Inside span_03</span>
+    <span id="div_04">Inside span_04</span>
+    <br> <hr>
+
+    <!-- Converting span to div's behavious -->
+    <span class="span_05">Inside span_05</span>
+    <span class="span_06">Inside span_06</span>
+    <hr>
+
+    <!-- Non-semantic (no-meaning) tags: 
+         Tells nothing about it's content
+         Ex: span, div -->
+    <!-- Semantic (meaningful) tags: 
+         Defines it's inside content
+         Ex: table, form, section, article, aside, figure, 
+         figcaption, header, footer, main, nav -->
+    <!-- Semantic tags are used for SEO  -->
+    
+
+    
+    
+</body>
+</html>

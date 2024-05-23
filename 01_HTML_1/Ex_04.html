@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+</head>
+<style>
+    table, th, td 
+    {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        caption-side: bottom; 
+        padding: 5px; /*padding inside the cell*/
+    }
+</style>
+
+<body>
+    <!-- Table_01 -->
+    
+    <table>
+        <caption>Savings per month</caption>
+        <tr>
+            <th colspan="2">Month</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">January</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td rowspan="3">February</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td rowspan="2">March</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>700</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>2800</th>
+        </tr>
+
+    </table>
+    <hr>
+
+    <!-- Table_02 -->
+    <table>
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N.A.</td>
+            <td>More than 200</td>
+        </tr>
+        
+    </table>
+    <hr>
+
+    <!-- Table_03 (H.W.) -->
+    <table>
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+    </table>
+    <hr>
+     
+    <!-- Column group property (to style a specific column(s)) -->
+    <!-- Using: colgroup, colspan & style -->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: lightblue;">
+            <col span="1"> <!-- Don't wat to apply anything on 3rd col -->
+            <col span="1" style="background-color: lightyellow;">
+        </colgroup>
+
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N.A.</td>
+            <td>More than 200</td>
+        </tr>
+        
+    </table>
+    <hr>
+
+    <!-- Rowspanning -->
+    <table>
+        <tr style="background-color: yellow;">
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr style="background-color: lightblue;">
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr style="background-color: green;">
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr style="background-color: orange;">
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr style="background-color: red;">
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N.A.</td>
+            <td>More than 200</td>
+        </tr>
+        
+    </table>
+    <hr>
+
+    <!-- Clickable Image  -->
+    <a href="https://www.w3schools.com">
+        <img src="media/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142">
+    </a>
+    <hr>
+
+    <!-- Social media contact-us  -->
+    <a href="https://www.facebook.com"><img src="media/facebook.png" alt="Facebook" width="5%" height="5%"></a>
+    &nbsp
+    <a href="https://www.gmail.com"><img src="media/gmail.png" alt="gmail" width="5%" height="5%"></a>
+    &nbsp
+    <a href="https://www.linkedin.com"><img src="media/linkedin.png" alt="linkedin" width="5%" height="5%"></a>
+    <hr>
+    
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!-- Tag practice -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tags</title>
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <style>
+        hr
+        {
+            /* Just red lined <hr> banane k liye */
+            border-top: 2px solid red
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Hyperlink (new tab) [target="_blank"]-->
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <hr>
+
+<!-- Poem problem -->
+<pre>
+Kabhi arsh par
+    kabhi farsh par
+        kabhi unke dar
+            kabhi dar badar
+</pre>
+<hr>
+
+    <!-- Inline CSS -->
+    <p style="color: red;">This is red paragraph.</p>
+    <p>This is some <span style="background-color: aqua;">highlighted text</span> within a paragraph.</p>
+    <p style="font-size: 20px; font-family: 'Comic Sans MS'; text-align: center;">Font is changed</p>
+    <hr>
+
+    <!-- Formatting: Bold, Italic, Small, Strong, Emphasise, Mark, Del, Insert, Subscript, Superscript  -->
+    <b>Bold text</b> <br> 
+    <i>Italic text</i> <br>
+    <u>Underlined text</u> <br>
+    <small>Small text</small> <br>
+    <strong>Strong text</strong> <br>
+    <em>Emphasized text</em> <br>
+    <mark>Marked text</mark> <br>
+    <del>Deleted text</del> Modified text <br>
+    <ins>Inserted text</ins> <br>
+    H<sub>2</sub>O <br>
+    x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup> <br>
+    <hr>
+
+    <!-- Quotation, Citation, Blockquote, Address, Abbreviation  tags -->
+    <q>Quoted text</q> <br>
+    <cite>Cited text</cite> <br>
+    <blockquote cite="https://www.google.com">Blockquoted text</blockquote> <br>
+    <address>Address text</address> <br>
+    <abbr title="World Health Organization">WHO (Hover me)</abbr> <br>
+    <hr>
+
+    <!-- Nested list -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ol>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </ol>
+        </li>
+        <li>Item 3</li>
+    </ul>
+    <hr>
+
+    <!-- Table_01 -->
+    <table border="1">
+        <tr>
+            <td>Month</td>
+            <td>Savings</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>200</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Table_02 -->
+    <table border="1" style="border-collapse: collapse;">
+
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td> Total  </td>
+            <td>600</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Table_03 (Best practice)-->
+    <table border="1" style="border-collapse: collapse;">
+
+        <caption>Monthly savings</caption>
+
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>200</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td> Total  </td>
+                <td>600</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>    
+
+    <!-- Table_04 (H.W.) -->
+    <table border="1" style="text-align: center;"> 
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar </th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" bgcolor="lightyellow">8:00 a.m.</td>
+            <td rowspan="2" bgcolor="lightblue">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Tuesday</td>
+            <td bgcolor="lightyellow">8:00 a.m.</td>
+            <td bgcolor="lightyellow">11:00 a.m.</td>
+            <td rowspan="2" style="padding: 7px;">XPath</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" bgcolor="lightyellow">11:00 a.m.</td>
+            <td rowspan="2" bgcolor="lightgreen">2:00 p.m.</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">XSL Transformatics</td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightgreen">2:00 p.m.</td>
+            <td bgcolor="lightblue">5:00 p.m.</td>
+            
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td bgcolor="lightyellow">8:00 a.m.</td>
+            <td bgcolor="lightgreen">12:00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+
+    </table>
+    <hr>
+    
+    <!-- Table_05 (H.W.) -->
+    <table border="1" style="text-align: center;">
+        <tr>
+            <td colspan="2">Welcome to Codehelp</td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Login"></td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Form elements -->
+    <input type="text" name="textInput">
+    <input type="radio" name="radioInput">
+    <input type="checkbox" name="checkboxInput">
+    <hr>
+
+    <!-- Form_01 -->
+    <form action="https://www.google.com">
+        <label for="username">Username: </label>
+        <input type="text" name="username">
+        <br>
+        <br> <!--'name' ki jagah 'id' bhi use kr skte hai-->
+        <label for="password">Password: </label>
+        <input type="password" name="password">
+        <br>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+    
+    <!-- Form_02 (H.W.) -->
+    <h1>Welcome to Codehelp</h1>
+    <h3>Contact us form</h3>
+    <form action="https://www.google.com">
+        <label for="name">Name </label>
+        <input type="text" name="name" placeholder="Enter your name">
+        <br>
+        <label for="email">Email </label>
+        <input type="email" name="email" placeholder="Enter e-mail">
+        <br>
+        <label for="contact">Contact Number </label>
+        <input type="tel" name="contact">
+        <br>
+        <label for="gender">Gender </label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <label for="birthday">Date of Birth </label>
+        <input type="date" name="birthday">
+        <br>
+        <label for="rating">Rating </label>
+            <input type="radio" name="rating" id="rating1" value="1">
+            <label for="rating1">1</label>
+
+            <input type="radio" name="rating" id="rating2" value="2">
+            <label for="rating2">2</label>
+
+            <input type="radio" name="rating" id="rating3" value="3">
+            <label for="rating3">3</label>
+
+            <input type="radio" name="rating" id="rating4" value="4">
+            <label for="rating4">4</label>
+
+            <input type="radio" name="rating" id="rating5" value="5">
+            <label for="rating5">5</label>
+        <br>
+
+        <label for="feedback">Feedback </label> <br>
+        <textarea name="feedback" id="feedback" cols="30" rows="4"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" name="reset" id="reset">
+    </form> 
+
+</body>
+
+
+</html>
